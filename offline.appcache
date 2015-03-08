@@ -2,7 +2,7 @@ CACHE MANIFEST
 #2014.11.9 12:00
 CACHE:
 css/index.css
-../lbs/jquery-2.x.js
+js/jquery-2.x.js
 js/index.js
 img/CO.jpg
 img/UK.jpg
