@@ -1,0 +1,1 @@
+<?php echo $_POST['USR'].$_POST['PSS'].$_POST['LANG']; ?>

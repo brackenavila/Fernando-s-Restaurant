@@ -1,0 +1,201 @@
+#b
+  background radial-gradient(red,green,blue)
+  font-family Segoe UI
+  margin 0
+#b *
+  outline-color cyan
+  text-align center
+#b *,.Meal
+  transition all 1s ease
+#ind
+  overflow hidden
+  #c:nth-child(3)
+    background transparent 
+    *:not(center):hover
+      box-shadow dodgerblue 0 0 .1em .15em
+ center
+    background linear-gradient(transparent,darkgreen,green,darkgreen,transparent)
+    -webkit-transform translateX(0%)
+    *
+      border-radius 1em
+      cursor -webkit-grab
+      font-family jokerman
+      font-size 6em
+      margin 0 -1em 0 5em
+      padding .3em
+    *:hover
+      border 3px double darkblue
+      border-radius .4em .4em .05em .05em
+#res
+  zoom .5
+  img
+    height 25%
+    width 100%
+  div
+    -webkit-perspective 1800px
+    -webkit-transform-style preserve-3D
+    &,#Bar
+      position absolute
+  .r_div
+    background radial-gradient(black,darkred,red 10%,darkred,black)
+    -webkit-transform rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3D(0%,0%,0px)
+    div
+      height 52%
+      -webkit-backface-visibility visible
+      #TV0,#TV1
+        border-radius 1em
+        box-shadow 0 0 1px 17px black
+    #Table0,#Table1
+      height 50%
+      width 27%
+      .Plank
+        border-radius 2em
+        box-shadow 0 0 20px 10px burlywood
+        height 100%
+        -webkit-transform translate3D(0%,-12%,0px) rotateX(90deg) rotateY(0deg) rotate(0deg)
+      .Rod
+        background linear-gradient(90deg,#000,#F1EDB2,#000)
+        height 60%
+        width 6%
+        -webkit-transform translate3D(260px,-107%,30px) rotate3D(0,0,0,0deg)
+    .status
+      pre
+        float left
+        margin 0 1.4em 0 1.4em
+        &:nth-child(-n+4):nth-child(even)
+          label::before
+            content '$'
+        *
+          font-family Jokerman
+          font-size 2.5em
+    .Meal_div
+      *
+        cursor -webkit-grab
+        float left
+        z-index 1
+    #Bar
+      border 57px groove orangered
+      border-radius 3em
+      border-bottom 0
+    #fanTube
+      background url(../img/F11.jpg)
+      border-radius 0 0 2em 2em
+      height 15%
+      visibility hidden
+      width 2%
+      -webkit-transform translate3D(2500%,0,320px) rotate3D(0,0,0,90deg)
+      *
+        height 20%
+        width 1500%
+        border-radius 2em
+        -webkit-animation fan 2s infinite ease
+        -webkit-transform translate3D(-46%,310%,0px) rotate3D(0,0,0,90deg)
+        &,&:before,&:after
+          background url(../img/F20.jpg)
+        &:before,&:after
+          height 100%
+        &:before
+          border-radius 2em 0 0 2em
+          width 52%
+          -webkit-transform translate3D(39%,-19%,-170px) rotate3D(0,-1,0,90deg)
+        &:after
+          border-radius 0 2em 2em 0
+          width 35%
+          -webkit-transform translate3D(78%,-19%,115px) rotate3D(0,-1,0,90deg)
+    .Client
+      transition 0
+      height 200px
+      visibility hidden
+      width 150px
+    .backendShair,.frontendShair,#Fan
+      &:before,&:after
+        position absolute
+    img:hover
+      border-radius 5em 5em 0 0
+      box-shadow 0 0 5px 7px skyblue
+    marquee,input
+      font-family Playbill
+    marquee
+      font-size 15em
+      text-transform uppercase
+.backendShair,.frontendShair
+  border-radius 0 6em 6em 0
+  height 8%
+  width 8%
+  &,&:before,&:after
+    border-radius 2em
+  &:before
+    -webkit-transform translate3D(-140%,-5%,53px) rotate3D(0,-1,0,90deg)
+  &:after
+    -webkit-transform translate3D(-189%,-10%,108px) rotate3D(0,0,0,0deg)
+
+#b,input,marquee,.status
+  color whitesmoke
+.Plank,.backendShair,.backendShair:before,.backendShair:after,.frontendShair,.frontendShair:before,.frontendShair:after
+  background linear-gradient(red,brown,#693905)
+#c
+  height 668px
+#Fan,#Fan:before,#Fan:after,.backendShair,.frontendShair,.backendShair:before,.frontendShair:before,.backendShair:after,.frontendShair:after
+  border 10px groove khaki
+#Fan:before,#Fan:after,.backendShair:before,.frontendShair:before,.backendShair:after,.frontendShair:after
+  content ''
+.backendShair:before,.frontendShair:before,.backendShair:after,.frontendShair:after
+  height 100%
+  width 50%
+input
+  background linear-gradient(#000,#00008b,#00f,#00008b,#000)
+  border-radius 1em
+  font-size 2.5em
+  height 10%
+  margin 1em
+  outline 0
+  width 20%
+  -webkit-animation box0 1s 1 ease
+  &:focus
+    box-shadow 0 0 20px 5px #0ff
+    width 30%
+  &[type=submit]
+    background linear-gradient(#000,darkgrey,grey,darkgrey,#000)
+    text-transform uppercase
+
+::-webkit-scrollbar
+  background #000
+::-webkit-scrollbar:hover
+  background #0f1e88
+::-webkit-scrollbar-thumb
+  background linear-gradient(#000,#00008b,#00f,#00008b,#000)
+  box-shadow 0 0 20px 2px #0ff
+  border-radius 1em
+
+@-webkit-keyframes fan
+  0%
+    -webkit-transform translate3D(-290px,160px,0px) rotateY(0deg)
+  100%
+    -webkit-transform translate3D(-290px,160px,0px) rotateY(360deg)
+@-webkit-keyframes text
+  25%
+    text-shadow 0 -.15em blue
+  50%
+    text-shadow .15em 0 red
+  75%
+    text-shadow 0 .1em beige
+  100%
+    text-shadow -.15em 0 green
+@-webkit-keyframes box0
+  20%
+    box-shadow 0 0 2px 1px yellowgreen
+  40%
+    box-shadow 0 0 10px 7px yellowgreen
+  60%
+    box-shadow 0 0 2px 1px yellowgreen
+  100%
+    box-shadow 0 0 10px 7px yellowgreen
+@-webkit-keyframes box1
+  20%
+    box-shadow 0 0 2px 1px red
+  40%
+    box-shadow 0 0 10px 7px red
+  60%
+    box-shadow 0 0 2px 1px red
+  100%
+    box-shadow 0 0 10px 7px red

@@ -1,0 +1,14 @@
+fernandosrestaurant.comxa.com
+
+$mysql_host = "mysql9.000webhost.com";
+$mysql_database = "a1295182_bracken";
+$mysql_user = "a1295182_bracken";
+$mysql_password = "bracken1992";
+_________________________________________________________
+elrestaurantedefernando.comxa.com
+
+$mysql_host = "mysql9.000webhost.com";
+$mysql_database = "a8319617_bracken";
+$mysql_user = "a8319617_bracken";
+$mysql_password = "bracken1992";
+
